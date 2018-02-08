@@ -1,3 +1,8 @@
 /*
  * YOUR STYLES HERE
  */
+
+body {
+    font: 100%/1.5 "Tahoma", "Helvetica";
+    color: #333333;
+}
