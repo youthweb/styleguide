@@ -63,7 +63,7 @@ To update the GitHub Pages on https://youthweb.github.io/styleguide do this in t
     php core/console --generate
     git checkout gh-pages
     cp -R ./public/* ./
-    git commit 'Update gh-pages'
+    git commit -am 'Update gh-pages'
     git push origin gh-pages
 
 The changes should be online within seconds.
