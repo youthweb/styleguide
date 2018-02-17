@@ -7,7 +7,7 @@ const ExtractCss = new ExtractTextPlugin({
 
 module.exports = {
 	entry: {
-		main: './index.js',
+		main: './source/js/index.js',
 	},
 	output: {
 		filename: '[name].js',

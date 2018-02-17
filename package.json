@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "The Styleguide for Youthweb.net",
   "private": true,
-  "main": "source/js/index.js",
+  "main": "index.js",
   "scripts": {
-    "generate": "webpack -p --config=webpack.config.js && php core/console --generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "webpack -p --config=webpack.config.js && php core/console --generate",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon empty.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,16 @@
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.0",
     "node-sass": "^4.7.2",
+    "nodemon": "^1.15.0",
     "sass-loader": "^6.0.6",
     "webpack": "^3.0.0"
+  },
+  "nodemonConfig": {
+    "watch": ["source/*"],
+    "ignore": ["source/dist/*", "source/public/*"],
+    "delay": "1000",
+    "events": {
+      "start": "webpack --config=webpack.config.js && php core/console --generate"
+    }
   }
 }

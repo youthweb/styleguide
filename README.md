@@ -15,8 +15,9 @@ Please follow the directions for [installing Composer](https://getcomposer.org/d
 In Terminal type:
 
     composer update
+    npm install
 
-This will install dependencies.
+This will install all dependencies.
 
 ## Updating the Patterns
 
@@ -26,27 +27,17 @@ Make your changes in the `/source` folder.
 
 These are some helpful commands you can use on the command line for working with Pattern Lab.
 
-### List all of the available commands
-
-To list all available commands type:
-
-    php core/console --help
-
-To list the options for a particular command type:
-
-    php core/console --help --[command]
-
 ### Generate Pattern Lab
 
 To generate the front-end for Pattern Lab type:
 
-    php core/console --generate
+    npm run publish
 
 ### Watch for changes and re-generate Pattern Lab
 
 To watch for changes and re-generate the front-end for Pattern Lab type:
 
-    php core/console --watch
+    npm run watch
 
 ### Start a server to view Pattern Lab
 
@@ -60,7 +51,7 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
 To update the GitHub Pages on https://youthweb.github.io/styleguide do this in the terminal:
 
-    php core/console --generate
+    npm run publish
     git checkout gh-pages
     cp -R ./public/* ./
     git commit -am 'Update gh-pages'
