@@ -1,0 +1,40 @@
+/*
+ * Headings
+ */
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: $font-brand;
+    text-align: left;
+    font-size: 130%;
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+h2
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: $font-brand;
+    text-align: left;
+    font-size: 110%;
+    display: block;
+    padding: 13px 5px 5px 0px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: $font-brand;
+    text-align: left;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
