@@ -2,6 +2,8 @@
 composer.lock
 composer.phar
 export/*
+node_modules/*
 public/*
+source/dist/*
 source/styleguide/*
 vendor/*

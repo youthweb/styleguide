@@ -1,0 +1,34 @@
+{
+  "name": "youthweb-styleguide",
+  "version": "1.0.0",
+  "description": "The Styleguide for Youthweb.net",
+  "private": true,
+  "main": "source/js/index.js",
+  "scripts": {
+    "generate": "webpack -p --config=webpack.config.js && php core/console --generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/youthweb/styleguide.git"
+  },
+  "keywords": [
+    "youthweb",
+    "styleguide",
+    "patternlab"
+  ],
+  "author": "Youthweb e.V.",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/youthweb/styleguide/issues"
+  },
+  "homepage": "https://github.com/youthweb/styleguide#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.0.0"
+  }
+}
