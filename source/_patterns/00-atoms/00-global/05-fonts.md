@@ -2,4 +2,4 @@
 title: Schriftarten
 ---
 
-Das sind die Schriftarten von Youthweb.
+The primary font is "Tahoma", "Helvetica";

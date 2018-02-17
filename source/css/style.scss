@@ -1,8 +1,6 @@
-/*
- * YOUR STYLES HERE
- */
+@import "scss/variables.scss";
 
 body {
-    font: 100%/1.5 "Tahoma", "Helvetica";
-    color: #333333;
+    font: 100%/1.5 $font-brand;
+    color: $color-brand-black;
 }

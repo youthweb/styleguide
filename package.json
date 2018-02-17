@@ -37,6 +37,7 @@
     "watch": ["source/*"],
     "ignore": ["source/dist/*", "source/public/*"],
     "delay": "1000",
+    "ext": "*",
     "events": {
       "start": "webpack --config=webpack.config.js && php core/console --generate"
     }
