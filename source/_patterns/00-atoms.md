@@ -2,4 +2,4 @@
 
 This Styleguide defines the design of Youthweb.
 
-Github: [https://github.com/youthweb/styleguide](https://github.com/youthweb/styleguide)
+Github: <a href="https://github.com/youthweb/styleguide" target="_blank">https://github.com/youthweb/styleguide</a>

@@ -1,6 +1,24 @@
 @import "scss/variables.scss";
 
+html {
+    font-size: 10px;
+}
+
 body {
-    font: 100%/1.5 $font-brand;
+    font-family: $font-brand;
     color: $color-brand-black;
+    line-height: 1.3em;
+    font-size: 1.3em;
+}
+
+/**
+ * Links
+ */
+a {
+	color: $color-link;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
 }
