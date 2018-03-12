@@ -16,8 +16,8 @@ body {
  * Links
  */
 a {
-	color: $color-link;
-	text-decoration: none;
+    color: $color-link;
+    text-decoration: none;
 
 	&:hover, &:focus {
 		text-decoration: underline;
