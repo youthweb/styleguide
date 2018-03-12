@@ -3,6 +3,7 @@ composer.lock
 composer.phar
 export/*
 node_modules/*
+package-lock.json
 public/*
 source/dist/*
 source/styleguide/*
