@@ -2,19 +2,26 @@
 
 The Youthweb Styleguide is build with Pattern Lab and is based on the Standard Edition for Twig.
 
+## Requirements
+
+Required are:
+
+- PHP >= 5.4
+- npm 5
+
 ## Installing
 
-Youthweb Styleguide uses [Composer](https://getcomposer.org/) to manage project dependencies.
+Youthweb Styleguide uses [Composer](https://getcomposer.org/) and [npm](https://npmjs.org) to manage project dependencies.
 
 ### 1. Install Composer
 
-Please follow the directions for [installing Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) on the Composer website. We recommend you [install it globally](https://getcomposer.org/doc/00-intro.md#globally).
+We recommend you [install Composer locally](https://getcomposer.org/doc/00-intro.md#locally). If you have Composer installed globally you have to replace `php composer.phar` with `composer` in the following commands
 
 ### 2. Install the dependencies
 
 In Terminal type:
 
-    composer update
+    php composer.phar update
     npm install
 
 This will install all dependencies.
@@ -49,12 +56,27 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ### Update GitHub Pages
 
-To update the GitHub Pages on https://youthweb.github.io/styleguide do this in the terminal:
+To update the GitHub Pages on https://youthweb.github.io/styleguide/latest do this in the terminal on the master branch:
 
     npm run publish
-    git checkout gh-pages
-    cp -R ./public/* ./
-    git commit -am 'Update gh-pages'
-    git push origin gh-pages
+    rm -r docs/latest
+    cp -r public/ docs/latest
+    git commit -am 'Update latest version'
+    git push origin master
 
 The changes should be online within seconds.
+
+### Releasing a new version
+
+To release a new version you should first update the GitHub Pages on https://youthweb.github.io/styleguide/current with this commands on the master branch:
+
+    npm run publish
+    rm -r docs/current
+    cp -r public/ docs/current
+    git commit -am 'Release {version}'
+    git push origin master
+
+Then you can tag this commit as a new release (e.g. as `1.0.0`) and push it to the GitHub repository:
+
+    git tag {version}
+    git push origin --tags

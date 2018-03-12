@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "publish": "webpack -p --config=webpack.config.js && php core/console --generate",
+    "publish": "webpack --config=webpack.config.js && php core/console --generate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon empty.js"
   },
@@ -35,8 +35,8 @@
   },
   "nodemonConfig": {
     "watch": ["source/*"],
-    "ignore": ["source/dist/*", "source/public/*"],
-    "delay": "1000",
+    "ignore": ["source/dist/*", "source/public/*", "docs/*"],
+    "delay": "500",
     "ext": "*",
     "events": {
       "start": "webpack --config=webpack.config.js && php core/console --generate"
