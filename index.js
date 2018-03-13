@@ -1,1 +1,1 @@
-import 'source/css/style.scss';
+import 'source/js/index.js';
