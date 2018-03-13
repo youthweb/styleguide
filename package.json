@@ -24,18 +24,31 @@
     "url": "https://github.com/youthweb/styleguide/issues"
   },
   "homepage": "https://github.com/youthweb/styleguide#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.0"
+  },
   "devDependencies": {
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.0",
     "node-sass": "^4.7.2",
     "nodemon": "^1.15.0",
+    "postcss-loader": "^2.1.1",
+    "precss": "^3.1.2",
     "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.3",
     "webpack": "^3.0.0"
   },
   "nodemonConfig": {
-    "watch": ["source/*"],
-    "ignore": ["source/dist/*", "source/public/*", "docs/*"],
+    "watch": [
+      "source/*"
+    ],
+    "ignore": [
+      "source/dist/*",
+      "source/public/*",
+      "docs/*"
+    ],
     "delay": "500",
     "ext": "*",
     "events": {

@@ -18,9 +18,12 @@ module.exports = {
 			{
 				test: /\.s?css$/,
 				use: ExtractCss.extract({
-					use: [
-						{loader: 'css-loader'}, {loader: 'sass-loader'}
-					],
+					fallback: 'style-loader',
+					use: [{
+						loader: 'css-loader'
+					}, {
+						loader: 'sass-loader'
+					}],
 				}),
 			},
 		]
