@@ -1,11 +1,12 @@
 {
   "name": "youthweb-styleguide",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "The Styleguide for Youthweb.net",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "publish": "webpack --config=webpack.config.js && php core/console --generate",
+    "build": "webpack --config=webpack.config.js && php core/console --generate",
+    "server": "webpack --config=webpack.config.js && php core/console --server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon empty.js"
   },
@@ -25,23 +26,23 @@
   },
   "homepage": "https://github.com/youthweb/styleguide#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.4",
-    "bootstrap": "^4.0.0",
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "bootstrap": "^4.2.1",
     "file-loader": "^1.1.11",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.0",
-    "url-loader": "^1.0.1"
+    "popper.js": "^1.14.7",
+    "url-loader": "^1.1.2"
   },
   "devDependencies": {
-    "css-loader": "^0.28.9",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
-    "node-sass": "^4.7.2",
-    "nodemon": "^1.15.0",
-    "postcss-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "postcss-loader": "^2.1.6",
     "precss": "^3.1.2",
-    "sass-loader": "^6.0.6",
+    "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "webpack": "^3.0.0"
+    "webpack": "^3.12.0"
   },
   "nodemonConfig": {
     "watch": [

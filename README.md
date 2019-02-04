@@ -38,7 +38,7 @@ These are some helpful commands you can use on the command line for working with
 
 To generate the front-end for Pattern Lab type:
 
-    npm run publish
+    npm run build
 
 ### Watch for changes and re-generate Pattern Lab
 
@@ -50,7 +50,7 @@ To watch for changes and re-generate the front-end for Pattern Lab type:
 
 You can use PHP's built-in web server to review your Pattern Lab project in a browser. In a seperate window type:
 
-    php core/console --server
+    npm run server
 
 Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
@@ -58,7 +58,7 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
 To update the GitHub Pages on https://youthweb.github.io/styleguide/latest do this in the terminal on the master branch:
 
-    npm run publish
+    npm run build
     rm -r docs/latest
     cp -r public/ docs/latest
     git commit -am 'Update latest version'
