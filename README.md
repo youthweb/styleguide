@@ -6,8 +6,8 @@ The Youthweb Styleguide is build with Pattern Lab and is based on the Standard E
 
 Required are:
 
-- PHP >= 5.4
-- npm 5
+- PHP >= 5.6
+- npm 6
 
 ## Installing
 
